@@ -1,303 +1,76 @@
 <template>
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-20">
-        <h1
-          class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
-        >
-          Our Team
-        </h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-          Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-          gentrify, subway tile poke farm-to-table. Franzen you probably haven't
-          heard of them.
-        </p>
-      </div>
-      <div class="flex flex-wrap -m-2">
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+  <div class="w-full max-w-screen-xl mx-auto px-6">
+    <div class="flex justify-center p-4 px-3 py-10">
+      <div class="w-full max-w-md">
+        <div class="bg-white shadow-md rounded-lg px-3 py-2 mb-4">
           <div
             class="
-              h-full
-              flex
-              items-center
-              border-gray-200 border
-              p-4
-              rounded-lg
+              block
+              text-gray-600 text-center text-lg
+              font-semibold
+              py-4
+              px-2
+              border-b-2 border-solid
             "
           >
-            <img
-              alt="team"
-              class="
-                w-16
-                h-16
-                bg-gray-100
-                object-cover object-center
-                flex-shrink-0
-                rounded-full
-                mr-4
-              "
-              src="https://dummyimage.com/80x80"
-            />
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">
-                Holden Caulfield
-              </h2>
-              <p class="text-gray-500">UI Designer</p>
-            </div>
+            📝 Todo List
           </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <Todos :todos="todos" />
           <div
             class="
-              h-full
-              flex
-              items-center
-              border-gray-200 border
-              p-4
-              rounded-lg
+              bg-gray-200
+              text-sm text-right
+              py-3
+              px-3
+              -mx-3
+              -mb-2
+              rounded-b-lg
             "
           >
-            <img
-              alt="team"
-              class="
-                w-16
-                h-16
-                bg-gray-100
-                object-cover object-center
-                flex-shrink-0
-                rounded-full
-                mr-4
-              "
-              src="https://dummyimage.com/84x84"
-            />
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Henry Letham</h2>
-              <p class="text-gray-500">CTO</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div
-            class="
-              h-full
-              flex
-              items-center
-              border-gray-200 border
-              p-4
-              rounded-lg
-            "
-          >
-            <img
-              alt="team"
-              class="
-                w-16
-                h-16
-                bg-gray-100
-                object-cover object-center
-                flex-shrink-0
-                rounded-full
-                mr-4
-              "
-              src="https://dummyimage.com/88x88"
-            />
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Oskar Blinde</h2>
-              <p class="text-gray-500">Founder</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div
-            class="
-              h-full
-              flex
-              items-center
-              border-gray-200 border
-              p-4
-              rounded-lg
-            "
-          >
-            <img
-              alt="team"
-              class="
-                w-16
-                h-16
-                bg-gray-100
-                object-cover object-center
-                flex-shrink-0
-                rounded-full
-                mr-4
-              "
-              src="https://dummyimage.com/90x90"
-            />
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">John Doe</h2>
-              <p class="text-gray-500">DevOps</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div
-            class="
-              h-full
-              flex
-              items-center
-              border-gray-200 border
-              p-4
-              rounded-lg
-            "
-          >
-            <img
-              alt="team"
-              class="
-                w-16
-                h-16
-                bg-gray-100
-                object-cover object-center
-                flex-shrink-0
-                rounded-full
-                mr-4
-              "
-              src="https://dummyimage.com/94x94"
-            />
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Martin Eden</h2>
-              <p class="text-gray-500">Software Engineer</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div
-            class="
-              h-full
-              flex
-              items-center
-              border-gray-200 border
-              p-4
-              rounded-lg
-            "
-          >
-            <img
-              alt="team"
-              class="
-                w-16
-                h-16
-                bg-gray-100
-                object-cover object-center
-                flex-shrink-0
-                rounded-full
-                mr-4
-              "
-              src="https://dummyimage.com/98x98"
-            />
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Boris Kitua</h2>
-              <p class="text-gray-500">UX Researcher</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div
-            class="
-              h-full
-              flex
-              items-center
-              border-gray-200 border
-              p-4
-              rounded-lg
-            "
-          >
-            <img
-              alt="team"
-              class="
-                w-16
-                h-16
-                bg-gray-100
-                object-cover object-center
-                flex-shrink-0
-                rounded-full
-                mr-4
-              "
-              src="https://dummyimage.com/100x90"
-            />
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">
-                Atticus Finch
-              </h2>
-              <p class="text-gray-500">QA Engineer</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div
-            class="
-              h-full
-              flex
-              items-center
-              border-gray-200 border
-              p-4
-              rounded-lg
-            "
-          >
-            <img
-              alt="team"
-              class="
-                w-16
-                h-16
-                bg-gray-100
-                object-cover object-center
-                flex-shrink-0
-                rounded-full
-                mr-4
-              "
-              src="https://dummyimage.com/104x94"
-            />
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Alper Kamu</h2>
-              <p class="text-gray-500">System</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div
-            class="
-              h-full
-              flex
-              items-center
-              border-gray-200 border
-              p-4
-              rounded-lg
-            "
-          >
-            <img
-              alt="team"
-              class="
-                w-16
-                h-16
-                bg-gray-100
-                object-cover object-center
-                flex-shrink-0
-                rounded-full
-                mr-4
-              "
-              src="https://dummyimage.com/108x98"
-            />
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">
-                Rodrigo Monchi
-              </h2>
-              <p class="text-gray-500">Product Manager</p>
-            </div>
+            <button
+              class="hover:text-gray-600 text-gray-500 font-bold py-2 px-4"
+            >
+              Clear
+            </button>
+            <Button text="&plus; Add Task" />
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
+import Button from "../components/Button.vue";
+import Todos from "../components/Todos.vue";
+
 export default {
   name: "Home",
+  components: { Button, Todos },
+  data() {
+    return {
+      todos: [],
+    };
+  },
+  created() {
+    this.todos = [
+      {
+        id: 1,
+        title: "delectus aut autem",
+        completed: false,
+      },
+      {
+        id: 2,
+        title: "quis ut nam facilis et officia qui",
+        completed: false,
+      },
+      {
+        id: 3,
+        title: "fugiat veniam minus",
+        completed: false,
+      },
+    ];
+  },
 };
 </script>
 
