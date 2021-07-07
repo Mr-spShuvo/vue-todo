@@ -1,24 +1,14 @@
-# tasktracker
+# Vue Todo
 
-## Project setup
-```
-yarn install
-```
+Trying vuejs for first time. This is simple todo list application built with vuejs and tailwindcss.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## Preview
 
-### Compiles and minifies for production
-```
-yarn build
-```
+![App Preview](screenshot.png)
 
-### Lints and fixes files
-```
-yarn lint
-```
+## Project setup and installation
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- `yarn install` - Install dependencies
+- `yarn serve` - Compiles and hot-reloads for development
+- `yarn build` - Compiles and minifies for production
+- `yarn lint` - Lints and fixes files
